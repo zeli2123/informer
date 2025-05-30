@@ -1,0 +1,143 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calibri:wght@400;700&display=swap');
+
+body {
+    font-family: "Calibri", "Candara", "Segoe", "Segoe UI", "Optima", Arial, sans-serif;
+    color: #4C4C4C; /*Цвет основного текста*/
+    line-height: 1.5; /*Междустрочный интервал*/
+    margin: 0;
+    padding: 0;
+    background-color: #fff; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Стили текста */
+
+h1, .header {
+    font-family: "Montserrat", "Calibri", sans-serif;
+    font-weight: 700; /* Жирное начертание */
+}
+
+/* Для обычного текста */
+p, li {
+    font-family: "Calibri", "Modern No. 20", serif;
+    font-weight: 400; /* Нормальное начертание */
+}
+
+/* Контейнер, центрирует и ограничивает ширину контента */
+.container {
+    max-width: 900px; /* Максимальная ширина блока */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    padding: 20px; /* Внутренний отступ */
+}
+
+/* Контейнер для логотипа */
+.logo-container {
+    text-align: center; /* Центрирование содержимого */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Сам логотип (картинка) */
+.logo {
+    width: 115px;
+    height: 115px; /* Фиксированные размеры логотипа */
+}
+
+/* Заголовок с рамкой */
+.header.bordered {
+    border: 1px solid #000; /* Черная рамка */
+    padding: 10px; /* Внутренний отступ */
+    margin-bottom: 20px; /* Отступ снизу */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+
+
+/* Блок даты с подчеркиванием */
+.date.underlined {
+    border-bottom: 1px solid #000; /* Нижняя граница */
+    padding-bottom: 10px; /* Отступ от текста до линии */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Стили для текста даты */
+.date {
+    font-size: 18pt;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0; /* Убираем отступы */
+}
+
+/* Основной текстовый контент */
+.content {
+    font-size: 16pt; /* Размер основного текста */
+}
+
+/* Список особенностей (без маркеров) */
+.feature-list {
+    list-style-type: none; /* Убираем стандартные маркеры */
+    padding-left: 36px; /* Отступ слева (для псевдо-маркеров) */
+}
+
+/* Элементы списка */
+.feature-list {
+    position: relative; /* Для позиционирования псевдоэлемента */
+    margin-bottom: 20px; /* Отступ снизу у каждого пункта */
+}
+
+/* Создание псевдо-маркера перед каждым пунктом */
+.feature-list li:before {
+    content: "•"; /* Точка */
+    position: absolute;
+    left: -18px; /* Положение слева от текста */
+    font-family: Symbol; /* Шрифт для корректного отображения маркера */
+}
+
+/* Изображения-примеры */
+.example-image {
+    max-width: 100%; /* Не выходить за границы родителя */
+    height: auto; /* Автоматическое сохранение пропорций */
+    display: block; /* Убираем лишние отступы */
+    margin: 20px auto; /* Центрируем и добавляем отступы */
+}
+
+/* Изображение блока с опциями скачивания */
+.download-options {
+    width: 282px; /* Фиксированная ширина */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Центрирование и отступ */
+}
+
+/* Блок улучшений с подчеркиванием */
+.improvements.underlined {
+     border-bottom: 1px solid #000;
+     padding-bottom: 10px;
+     margin: 30px 0;
+}
+
+/* Заголовки второго уровня (h2) */
+h2 {
+    font-size: 16pt;
+    font-family: "Calibri", sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+/* Пункты блока улучшений */
+.improvements {
+    margin: 10px 0; /* Отступы сверху и снизу */
+    padding-left: 20px; /* Отступ текста */
+    text-indent: -20px; /* Выравнивание текста по левому краю метки */
+}
+
+/* Шрифты */
+@font-face {
+    font-family: 'Modern No. 20';
+    src: url('fonts/ModernNo20-Regular.woff2') format('woff2'),
+         url('fonts/ModernNo20-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
